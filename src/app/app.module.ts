@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeatherModule } from './feather.module';
 
+import { NavbarModule } from './features/navbar';
+
 @NgModule({
   declarations: [AppComponent],
   bootstrap: [AppComponent],
@@ -12,6 +14,7 @@ import { FeatherModule } from './feather.module';
     BrowserModule.withServerTransition({ appId: 'srcpulse' }),
     AppRoutingModule,
     FeatherModule,
+    NavbarModule,
   ],
 })
 export class AppModule { }
