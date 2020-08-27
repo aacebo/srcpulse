@@ -2,7 +2,10 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'src-navbar',
-  templateUrl: './navbar.component.html',
+  template: `
+    <ng-content select="src-navbar-header"></ng-content>
+    <ng-content select="src-navbar-body"></ng-content>
+  `,
   styleUrls: ['./navbar.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

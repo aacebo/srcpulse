@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FeatherModule } from './feather.module';
 
 import { NavbarModule } from './features/navbar';
+import { AvatarModule } from './features/avatar';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { NavbarModule } from './features/navbar';
     AppRoutingModule,
     FeatherModule,
     NavbarModule,
+    AvatarModule,
   ],
 })
 export class AppModule { }
